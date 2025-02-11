@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden initially.
+  </div>
+  <button onclick="showHideDiv()">Show/Hide</button>
+
+  <script>
+    function showHideDiv() {
+      var div = document.getElementById("myDiv");
+      div.style.display = (div.style.display === "none" ? "block" : "none");
+    }
+  </script>
+</body>
+</html>
